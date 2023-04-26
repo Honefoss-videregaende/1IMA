@@ -5,22 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Team!</title>
+
+    <script src="script.js" defer></script>
+
   </head>
   <body>
     <section class="center hero">
         <h1 class="text1 padding-1 spin">Velkommen til min Portfolie side!</h1>
-        <img class="spin" src="OzFb.gif" alt="Very gif" />
+        <img class="spin" src="/OzFb.gif" alt="Very gif" />
     </section>
     <section class="center">
         <a class="spin pulse bestill" href="https://youtu.be/dQw4w9WgXcQ">bestil piotrs maleservice 100% ekte ingen svindel!!!11!1!</a>
     </section>
     <section class="center flex-column padding-1">
-        <h3 class="text1 spin">Piotrs maleservice</h3>
+        <h3 class="text1 spin flashy">Piotrs maleservice</h3>
         <img class="spin" src="male-painter-paints-wall-shows-thumb-up_85574-10634.avif" alt="very piotr">
     </section>
     <section class="center">
-      <embed src="128kbps.mp3" width="0" autostart="true" ></embed>
+      <audio src="128kbps.mp3" width="0" autoplay="true"></audio>
     </section>
+    <div class="funny-popper" data-straight>
+      <p  data-straight>Viste du at Apple?! 🍎</p>
+      <p style="font-size: 2rem;">🤔🤣 WTH! Du kan ikke ta en Apple 🍎 opp i anusen?!🍑</p>
+      <p style="font-size: 2rem;">Molotov cock 🍆 tail 🔥🦼 i din kjeller! 💣🤣😱</p>
+      <button id="closer" class="flashy">
+        ❌
+      </button>
+    </div>
   </body>
 </html>
 
@@ -29,11 +40,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.2s;
   }
 
   body {
     background-color: #000;
     font-family: Arial, Helvetica, sans-serif;
+    animation-fill-mode: forwards;
+    
+    -webkit-animation-fill-mode: forwards;
+    overflow-x: hidden;
   }
 
   .text1 {
@@ -94,7 +110,7 @@
     }
 
   .spin:hover {
-    animation: spin 1s linear infinite;
+    animation: spin 1s infinite forwards;
   }
 
     @keyframes spin {
@@ -104,5 +120,27 @@
         100% {
         transform: rotate(360deg);
         }
+    }
+
+
+    .funny-popper {
+      position: absolute;
+      top: 50%;
+      left: 120%;
+
+      color: white;
+      background: hotpink;
+      width: 50vw;
+      height: 20rem;
+      font-size: 4rem;
+    }
+
+    .funny-popper button {
+      font-size: 4rem;
+      width: 10%;
+    }
+
+    .funny-popper[data-straight] {
+      transform: rotate(15deg);
     }
 </style>
