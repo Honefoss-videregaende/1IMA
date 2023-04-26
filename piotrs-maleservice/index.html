@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Team!</title>
+  </head>
+  <body>
+    <section class="center hero">
+        <h1 class="text1 padding-1 spin">Velkommen til min Portfolie side!</h1>
+        <img class="spin" src="/OzFb.gif" alt="Very gif" />
+    </section>
+    <section class="center">
+        <a class="pulse bestill" href="https://youtu.be/dQw4w9WgXcQ">bestil piotrs maleservice 100% ekte ingen svindel!!!11!1!</a>
+    </section>
+    <section class="center flex-column padding-1">
+        <h3 class="text1 spin">Piotrs maleservice</h3>
+        <img class="spin" src="male-painter-paints-wall-shows-thumb-up_85574-10634.avif" alt="very piotr">
+    </section>
+  </body>
+</html>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .text1 {
+    color: red;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .auto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    padding: 1rem;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+
+  }
+
+  .padding-1 {
+    padding: 1rem;
+  }
+
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+    .bestill {
+        text-decoration: none;
+        color: red;
+        font-size: 20px;
+        text-align: center;
+        padding: 1rem;
+        border: 1px solid red;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .pulse:hover {
+        animation: pulse 1s linear infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(2);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+  .spin:hover {
+    animation: spin 1s linear infinite;
+  }
+
+    @keyframes spin {
+        0% {
+        transform: rotate(0deg);
+        }
+        100% {
+        transform: rotate(360deg);
+        }
+    }
+</style>
